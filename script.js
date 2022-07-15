@@ -2,6 +2,7 @@
 let alumnos = []
 let validador = true
 let nombreAlumno
+let listaAlumnos=''
 
 do {
     nombreAlumno = prompt('Ingrese un nombre ó "Esc" para fializar ').toUpperCase()
@@ -16,5 +17,7 @@ do {
 
 console.log("Los alumnos ingresados son")
 for (let i = 0; i < alumnos.length; i++) {
-    console.log(`${i+1}-${alumnos[i]} `)
+    listaAlumnos+=`${i+1}-${alumnos[i]}\n`
 }
+
+alert(listaAlumnos)
